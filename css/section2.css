@@ -1,0 +1,94 @@
+#microfono, #camara, #chromeWeb, #añadirAtajo{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+
+.section2{
+    display: flex;
+    justify-content: center;
+}
+.buscador{
+    border: 1px #e1e3e1ff solid;
+    border-radius: 30px;
+    width: 561px;
+    height: 44px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 1px 4px 0 rgba(199, 199, 199, 0.9)
+}
+.lupa{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.lupa img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+#input{
+    width: 450px;
+    padding: 15px;
+    border: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    outline: none;
+}
+
+#microfono img{
+    width: 12px;
+    height: 16px;
+    padding-right: 10px;
+    display: flex;
+}
+#camara img{
+    width: 28px;
+    height: 28px;
+    padding-right: 12px;
+    display: flex;
+}
+.atajo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    padding: 2px;
+    margin-top: 16px;
+}
+
+#chromeWeb img, #añadirAtajo img{
+   width: 90px;
+   height: 90px;
+   border: none;
+}
+
+.img-container {
+    position: relative;
+    width: 110px;
+    height: 90px;
+    padding: 10px 5px;
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 199, 199, 0); 
+    transition: background-color 0.1s ease;
+    border-radius: 4px;
+}
+.img-container:hover::after{
+    background-color: rgba(199, 199, 199, 0.25);
+}

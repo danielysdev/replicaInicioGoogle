@@ -1,0 +1,9 @@
+@import "./navbar.css";
+@import "./section1.css";
+@import "./section2.css";
+
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,60 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px;
+    
+}
+.nabvar{
+    width: 178px;
+    height: 48px;
+    padding-right: 4px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #747775ff;
+}
+
+#gmail, #imagenes, #aplicaciones{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    text-decoration: none;
+    padding-right: 5px;
+}
+
+#gmail:hover, #imagenes:hover, 
+
+#aplicaciones:hover {
+    text-decoration: underline;
+}
+
+#aplicaciones img{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    padding-top: 12px;
+}
+.img-aplicaciones {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+.img-aplicaciones::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 199, 199, 0); 
+    transition: background-color 0.1s ease;
+    border-radius: 30px;
+}
+.img-aplicaciones:hover::after{
+    background-color: rgba(199, 199, 199, 0.25); 
+}
